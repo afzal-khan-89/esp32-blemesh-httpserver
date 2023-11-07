@@ -1,0 +1,110 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6992
+load:0x40078000,len:15512
+load:0x40080400,len:3864
+entry 0x40080650
+[0;32mI (27) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 17:45:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: Defaulting to factory image[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b480h (177280) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0003b4a8 vaddr=3ffbdb60 size=04b70h ( 19312) load[0m
+[0;32mI (184) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a2bech (666604) map[0m
+[0;32mI (425) esp_image: segment 3: paddr=000e2c14 vaddr=3ffc26d0 size=00068h (   104) load[0m
+[0;32mI (425) esp_image: segment 4: paddr=000e2c84 vaddr=40080000 size=185d0h ( 99792) load[0m
+[0;32mI (484) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (484) boot: Disabling RNG early entropy source...[0m
+[0;32mI (496) cpu_start: Multicore app[0m
+[0;32mI (496) cpu_start: Pro cpu up.[0m
+[0;32mI (496) cpu_start: Starting app cpu, entry point is 0x400812cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (514) cpu_start: Pro cpu start user code[0m
+[0;32mI (514) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (514) cpu_start: Application information:[0m
+[0;32mI (519) cpu_start: Project name:     onoff_client[0m
+[0;32mI (524) cpu_start: App version:      1[0m
+[0;32mI (529) cpu_start: Compile time:     Nov  7 2023 17:59:28[0m
+[0;32mI (535) cpu_start: ELF file SHA256:  d16ce0af34f5a396...[0m
+[0;32mI (541) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (546) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (551) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (556) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (561) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (568) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFC9C20 len 000163E0 (88 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 400985D0 len 00007A30 (30 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;32mI (621) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (625) app_start: Starting scheduler on CPU1[0m
+I (625) main_task: Started on CPU0[0m
+[0;32mI (635) main_task: Calling app_main()[0m
+[0;32mI (635) EXAMPLE: Initializing...[0m
+[0;32mI (635) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (645) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (655) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;32mI (665) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (715) BTDM_INIT: BT controller compile version [7c67f29][0m
+[0;32mI (725) system_api: Base MAC address is not set[0m
+[0;32mI (725) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (725) BTDM_INIT: Bluetooth MAC: b8:d6:1a:ab:d1:9a[0m
+[0;32mI (735) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+[0;32mI (1125) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1205) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1205) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1205) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 08 [0m
+[0;32mI (1215) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0x08[0m
+[0;32mI (1225) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1225) main_task: Returned from app_main()[0m
+[0;32mI (1235) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (13945) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (28195) BLE_MESH: No Health Server context provided[0m
+[0;33mW (31175) BLE_MESH: No Health Server context provided[0m
+[0;32mI (31195) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (31205) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (31205) EXAMPLE: net_idx: 0x0000, addr: 0x0044[0m
+[0;32mI (31205) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;33mW (32445) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;33mW (39705) BLE_MESH: No matching TX context for ack[0m
+[0;32mI (43905) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (43905) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (43905) AppKey: b3 b3 ee 0a b2 08 3f c8 3d 5d 39 ea 40 7e ac 2f [0m
+[0;32mI (73595) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (73595) EXAMPLE: elem_addr 0x0045, app_idx 0x0000, cid 0xffff, mod_id 0x1001[0m
+[0;32mI (73595) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (73605) EXAMPLE_NVS: Store, data: 00 00 00 00 00 08 [0m
+[0;33mW (86115) BLE_MESH: No matching TX context for ack[0m
+[0;32mI (92275) BOARD: tap cb (RELEASE)[0m
+[0;32mI (92285) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (92285) EXAMPLE_NVS: Store, data: 00 00 00 00 01 09 [0m
+[0;32mI (98455) BOARD: tap cb (RELEASE)[0m
+[0;32mI (98475) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (98475) EXAMPLE_NVS: Store, data: 00 00 00 00 00 0a [0m
+[0;32mI (109155) BOARD: tap cb (RELEASE)[0m
+[0;32mI (109165) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (109165) EXAMPLE_NVS: Store, data: 00 00 00 00 01 0b [0m
+[0;32mI (111505) BOARD: tap cb (RELEASE)[0m
+[0;32mI (111515) EXAMPLE_NVS: Store, key "onoff_client", length 6[0m
+[0;32mI (111515) EXAMPLE_NVS: Store, data: 00 00 00 00 00 0c [0m

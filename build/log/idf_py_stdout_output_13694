@@ -1,0 +1,106 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6992
+load:0x40078000,len:15512
+load:0x40080400,len:3864
+entry 0x40080650
+[0;32mI (27) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 17:45:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: Defaulting to factory image[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=41ad4h (269012) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=00051afc vaddr=3ffbdb60 size=05aa8h ( 23208) load[0m
+[0;32mI (219) esp_image: segment 2: paddr=000575ac vaddr=40080000 size=08a6ch ( 35436) load[0m
+[0;32mI (233) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=102550h (1058128) map[0m
+[0;32mI (616) esp_image: segment 4: paddr=00162578 vaddr=40088a6c size=15ea4h ( 89764) load[0m
+[0;32mI (668) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (669) boot: Disabling RNG early entropy source...[0m
+[0;32mI (680) cpu_start: Multicore app[0m
+[0;32mI (680) cpu_start: Pro cpu up.[0m
+[0;32mI (680) cpu_start: Starting app cpu, entry point is 0x40081348[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (700) cpu_start: Pro cpu start user code[0m
+[0;32mI (701) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (701) cpu_start: Application information:[0m
+[0;32mI (705) cpu_start: Project name:     onoff_client[0m
+[0;32mI (711) cpu_start: App version:      1[0m
+[0;32mI (715) cpu_start: Compile time:     Nov  7 2023 17:45:05[0m
+[0;32mI (721) cpu_start: ELF file SHA256:  f2e7e54412d297fa...[0m
+[0;32mI (727) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (733) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (737) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (742) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (747) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (754) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (760) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (766) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (772) heap_init: At 3FFCDB68 len 00012498 (73 KiB): DRAM[0m
+[0;32mI (778) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (785) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (791) heap_init: At 4009E910 len 000016F0 (5 KiB): IRAM[0m
+[0;32mI (799) spi_flash: detected chip: generic[0m
+[0;32mI (802) spi_flash: flash io: dio[0m
+[0;32mI (808) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (811) app_start: Starting scheduler on CPU1[0m
+I (811) main_task: Started on CPU0[0m
+[0;32mI (821) main_task: Calling app_main()[0m
+[0;32mI (821) EXAMPLE: Initializing...[0m
+[0;32mI (821) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (831) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;32mI (851) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (891) BTDM_INIT: BT controller compile version [7c67f29][0m
+[0;32mI (891) system_api: Base MAC address is not set[0m
+[0;32mI (891) system_api: read default base MAC address from EFUSE[0m
+[0;32mI (901) BTDM_INIT: Bluetooth MAC: b8:d6:1a:ab:d1:9a[0m
+[0;32mI (901) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+[0;32mI (1291) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (1371) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1381) EXAMPLE_NVS: Restore, key "onoff_client", length 6[0m
+[0;32mI (1381) EXAMPLE_NVS: Restore, data: 00 00 00 00 00 00 [0m
+[0;32mI (1381) EXAMPLE: Restore, net_idx 0x0000, app_idx 0x0000, onoff 0, tid 0x00[0m
+[0;32mI (1391) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1411) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+I (1421) wifi:wifi driver task: 3ffda7f0, prio:23, stack:6656, core=0
+I (1431) wifi:wifi firmware version: e2d0ad8
+I (1431) wifi:wifi certification version: v7.0
+I (1431) wifi:config NVS flash: enabled
+I (1431) wifi:config nano formating: disabled
+I (1431) wifi:Init data frame dynamic rx buffer num: 32
+I (1441) wifi:Init management frame dynamic rx buffer num: 32
+I (1441) wifi:Init management short buffer num: 32
+I (1451) wifi:Init dynamic tx buffer num: 32
+I (1451) wifi:Init static rx buffer size: 1600
+I (1461) wifi:Init static rx buffer num: 10
+I (1461) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1461) wifi_init: rx ba win: 6[0m
+[0;32mI (1471) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1471) wifi_init: udp mbox: 6[0m
+[0;32mI (1471) wifi_init: tcp mbox: 6[0m
+[0;32mI (1481) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1481) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1491) wifi_init: tcp mss: 1440[0m
+[0;32mI (1491) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1511) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1541) wifi:mode : sta (b8:d6:1a:ab:d1:98)
+I (1541) wifi:enable tsf
+WiFi connecting WIFI_EVENT_STA_START ... 
+[0;32mI (1551) main_task: Returned from app_main()[0m
+WiFi lost connection WIFI_EVENT_STA_DISCONNECTED ... 
